@@ -61,21 +61,25 @@ header p {
   color: rgba(255, 255, 255, 0.85);
 }
 
-.icon {
-  width: 120px;
-  height: 120px;
-  margin: 0 auto 32px;
-  border-radius: 28px;
-  background: rgba(255, 255, 255, 0.15);
-  backdrop-filter: blur(10px);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: 800;
-  font-size: 32px;
-  color: #fff;
-}
-
+ .icon-container {
+            width: 120px;
+            height: 120px;
+            margin: 0 auto 32px;
+            border-radius: 28px;
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(10px);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden; /* Ensures image stays rounded */
+        }
+        
+        .icon-img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain; /* or 'cover' for different scaling */
+            border-radius: 28px;
+        }
 
     .cta {
       margin-top: 32px;
@@ -158,7 +162,9 @@ header p {
 
     <!-- HERO -->
     <header>
-      <div class="icon">CL</div>
+       <div class="icon-container">
+        <img src="icon.png" alt="Clutch App Icon" class="icon-img">
+    </div>
 
       <h1>Clutch</h1>
       <p>Screenshot tasks in seconds.</p>
