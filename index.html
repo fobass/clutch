@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Clutch — Screenshot Tasks in Seconds</title>
+
+  <meta name="description" content="Clutch uses AI to extract tasks from your screenshots instantly. Stop typing tasks manually." />
+
+  <style>
+    :root {
+      --primary: #5b5cff;
+      --text: #111;
+      --muted: #666;
+      --bg: #ffffff;
+      --border: #eaeaea;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", Inter, system-ui, sans-serif;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 32px 20px;
+    }
+
+    header {
+      text-align: center;
+      padding: 80px 0 60px;
+    }
+
+    header h1 {
+      font-size: 48px;
+      font-weight: 800;
+      letter-spacing: -1px;
+    }
+
+    header p {
+      font-size: 20px;
+      color: var(--muted);
+      margin-top: 16px;
+    }
+
+    .icon {
+      width: 120px;
+      height: 120px;
+      margin: 0 auto 32px;
+      border-radius: 28px;
+      background: #f2f2f7;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 800;
+      font-size: 32px;
+      color: var(--primary);
+    }
+
+    .cta {
+      margin-top: 32px;
+    }
+
+    .cta a {
+      display: inline-block;
+      padding: 14px 28px;
+      background: var(--primary);
+      color: #fff;
+      text-decoration: none;
+      border-radius: 12px;
+      font-weight: 600;
+      font-size: 16px;
+    }
+
+    section {
+      padding: 60px 0;
+      border-top: 1px solid var(--border);
+    }
+
+    section h2 {
+      font-size: 32px;
+      margin-bottom: 24px;
+      text-align: center;
+    }
+
+    .steps, .features, .pricing {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 24px;
+      margin-top: 32px;
+    }
+
+    .card {
+      padding: 24px;
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      background: #fafafa;
+    }
+
+    .card h3 {
+      margin-bottom: 8px;
+      font-size: 18px;
+    }
+
+    .card p {
+      color: var(--muted);
+      font-size: 15px;
+    }
+
+    .price {
+      font-size: 24px;
+      font-weight: 700;
+      margin-top: 12px;
+    }
+
+    footer {
+      padding: 40px 0;
+      text-align: center;
+      color: var(--muted);
+      font-size: 14px;
+      border-top: 1px solid var(--border);
+    }
+
+    footer a {
+      color: var(--muted);
+      text-decoration: none;
+      margin: 0 8px;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+
+    <!-- HERO -->
+    <header>
+      <div class="icon">CL</div>
+
+      <h1>Clutch</h1>
+      <p>Screenshot tasks in seconds.</p>
+      <p>Stop typing tasks manually. Clutch uses AI to extract tasks from your screenshots instantly.</p>
+
+      <div class="cta">
+        <a href="#" target="_blank">Download on the App Store</a>
+      </div>
+    </header>
+
+    <!-- HOW IT WORKS -->
+    <section>
+      <h2>How It Works</h2>
+
+      <div class="steps">
+        <div class="card">
+          <h3>1. Screenshot anything</h3>
+          <p>Emails, messages, notes, documents.</p>
+        </div>
+
+        <div class="card">
+          <h3>2. Open Clutch</h3>
+          <p>AI extracts tasks automatically.</p>
+        </div>
+
+        <div class="card">
+          <h3>3. Save your tasks</h3>
+          <p>Export to Apple Reminders, Todoist, Notion, or CSV.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURES -->
+    <section>
+      <h2>Features</h2>
+
+      <div class="features">
+        <div class="card">✓ AI-powered task extraction</div>
+        <div class="card">✓ Location-based reminders</div>
+        <div class="card">✓ Recurring task detection</div>
+        <div class="card">✓ Export to multiple platforms</div>
+        <div class="card">✓ Batch processing</div>
+      </div>
+    </section>
+
+    <!-- PRICING -->
+    <section>
+      <h2>Pricing</h2>
+
+      <div class="pricing">
+        <div class="card">
+          <h3>Free</h3>
+          <p>Try it out</p>
+          <div class="price">5 extractions / week</div>
+        </div>
+
+        <div class="card">
+          <h3>Pro</h3>
+          <p>Best for productivity</p>
+          <div class="price">$9.99 / month</div>
+          <p>200 extractions / month</p>
+        </div>
+
+        <div class="card">
+          <h3>Lifetime</h3>
+          <p>One-time payment</p>
+          <div class="price">$149</div>
+          <p>Unlimited extractions forever</p>
+        </div>
+      </div>
+
+      <div class="cta" style="text-align:center; margin-top:40px;">
+        <a href="#" target="_blank">Download on the App Store</a>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <p>
+        <a href="#">Privacy Policy</a> |
+        <a href="#">Terms of Service</a> |
+        <a href="mailto:support@clutch.app">Contact</a>
+      </p>
+      <p>© 2026 Clutch. All rights reserved.</p>
+    </footer>
+
+  </div>
+</body>
+</html>
